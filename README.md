@@ -1,2 +1,2 @@
 # CoffeBreakChallenge
-Indonesia Android Kejar - make an app for ordering coffee
+Indonesia Android Kejar (beginner class) - Making an app for ordering coffee
