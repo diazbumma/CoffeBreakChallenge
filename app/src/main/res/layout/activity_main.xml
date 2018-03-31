@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_padding_app"
+    android:orientation="vertical"
+    tools:context="com.diazbumma.coffee.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_text_title"
+        android:layout_marginBottom="@dimen/margin_text_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/main_text_size"
+        android:text="@string/your_name"/>
+
+    <EditText
+        android:id="@+id/buyers_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_text_title"
+        android:layout_marginBottom="@dimen/margin_text_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/main_text_size"
+        android:text="@string/quantity"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="reduceOrder"
+            android:layout_width="@dimen/quantity_picker"
+            android:layout_height="@dimen/quantity_picker"
+            android:textSize="@dimen/main_text_size"
+            android:text="@string/decrement"/>
+        <TextView
+            android:id="@+id/total_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_quantity_value"
+            android:layout_marginRight="@dimen/margin_quantity_value"
+            android:textSize="@dimen/main_text_size"
+            android:text="@string/total_product"/>
+        <Button
+            android:onClick="addOrder"
+            android:layout_width="@dimen/quantity_picker"
+            android:layout_height="@dimen/quantity_picker"
+            android:textSize="@dimen/main_text_size"
+            android:text="@string/increment"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_text_title"
+        android:layout_marginBottom="@dimen/margin_text_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/main_text_size"
+        android:text="@string/topping"/>
+
+    <CheckBox
+        android:id="@+id/check_whipped_cream"
+        android:onClick="addWhippedCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/whipped_cream"/>
+
+    <CheckBox
+        android:id="@+id/check_chocolate"
+        android:onClick="addChocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chocolate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_text_title"
+        android:layout_marginBottom="@dimen/margin_text_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/main_text_size"
+        android:text="@string/price"/>
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_text_title"
+        android:text="@string/total_price"
+        />
+
+    <Button
+        android:onClick="orderCoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order"/>
+
+</LinearLayout>

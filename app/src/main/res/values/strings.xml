@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Coffee</string>
+    <string name="hint_name">Name</string>
+    <string name="total_price">Rp 0</string>
+    <string name="total_product">0</string>
+    <string name="increment">+</string>
+    <string name="decrement">-</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="brand">SETARBAK COFFEE</string>
+    <string name="your_name">YOUR NAME</string>
+    <string name="topping">TOPPINGS</string>
+    <string name="quantity">QUANTITY</string>
+    <string name="price">PRICE</string>
+    <string name="order">ORDER</string>
+    <dimen name="main_padding_app">20dp</dimen>
+    <dimen name="main_text_size">16sp</dimen>
+    <dimen name="margin_text_title">8dp</dimen>
+    <dimen name="quantity_picker">48dp</dimen>
+    <dimen name="margin_quantity_value">20dp</dimen>
+</resources>
